@@ -1,0 +1,25 @@
+@import './assets/sass/_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@font-face {
+  font-family: 'Rotterburg Stylish FREE';
+  src: url('./assets/fonts/RotterBurg/RotterburgStylishRegular.woff') format('woff'),
+      url('./assets/fonts/RotterBurg/RotterburgStylishRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body{
+  background-color: $primary-color;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+}
+
+.container{
+  width: 1500px;
+}

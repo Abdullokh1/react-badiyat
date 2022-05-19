@@ -1,0 +1,85 @@
+
+.hero{
+  padding-top: 54px;
+  position: relative;
+}
+
+.hero__bg__img{
+  width: 100%;
+  height: 346px;
+  border-radius: 21px;
+  background-image: url('../../assets/img/bgslider.png');
+  background-repeat: no-repeat;
+  animation: img 1s ease;
+}
+
+.hero__bg__img--second{
+  width: 97%;
+  height: 346px;
+  background-image: url('https://picsum.photos/id/23/1270/346');
+  background-repeat: no-repeat;
+  border-radius: 21px;
+  animation: second 1s ease;
+
+}
+.hero__bg__img--third{
+  width: 97%;
+  height: 346px;
+  background-image: url('https://picsum.photos/id/57/1270/346');
+  background-repeat: no-repeat;
+  border-radius: 21px;
+  animation: third 1s ease;
+}
+.hero__bg__img--fourth{
+  width: 97%;
+  height: 346px;
+  background-image: url('https://picsum.photos/id/667/1270/346');
+  background-repeat: no-repeat;
+  border-radius: 21px;
+  animation: fourth 1s ease;
+
+}
+.hero__title__wrapper{
+  padding: 30px 70px;
+}
+
+.hero__title{
+  font-size: 61px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #c9ac8c;
+  text-transform: uppercase;
+}
+
+  @keyframes img {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  @keyframes second {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  @keyframes third {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  @keyframes fourth {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
