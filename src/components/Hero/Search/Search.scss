@@ -1,18 +1,22 @@
 .hero__search{
-  width: 75%;
+  width: 1150px;
   height: 170px;
   background: #191919;
+  margin: 0 auto;
   box-shadow: 0px 4px 77px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  position: absolute;
-  left: 11%;
-  bottom: 110px;
+  position: relative;
+  top: -40px;
+  left: -13px;
   padding: 40px;
   text-align: center;
+  font-family: 'Steinbeck';
+
  
   &--title{
     color: #c9ac8c;
     font-size: 31px;
+    font-family: 'Rotterburg Stylish FREE';
   }
 
   &--input{
@@ -35,6 +39,8 @@
     padding: 10px 45px;
     margin-left: 15px;
     transition: all 0.4s ease;
+    font-family: 'HelveticaNeueCyr';
+
 
     &:hover{
       background-color: #8b6b49;
