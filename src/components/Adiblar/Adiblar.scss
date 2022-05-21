@@ -1,0 +1,44 @@
+.user-img{
+  object-fit: cover;
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  top: -25px;
+  left: -110px;
+}
+.user-year{
+  font-size: 40px;
+  color: #c9ac8c;
+  font-family: 'Rotterburg Stylish FREE';
+
+}
+.user-info-wrapper{
+  font-family: 'Roboto', sans-serif;
+
+}
+.user-date-birth{
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  font-size: 12px;
+}
+.user-line{
+  width: 14px;
+  height: 2px;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.user-name{
+  font-size: 48px;
+  color: #c9ac8c;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+.user-img-part{
+  margin-right: 40px;
+}
+
+.user-desc{
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Steinbeck';
+
+}

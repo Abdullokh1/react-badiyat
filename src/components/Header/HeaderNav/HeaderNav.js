@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './HeaderNav.scss'
 
 export default function HeaderNav() {
@@ -9,9 +10,13 @@ export default function HeaderNav() {
         {navItem.map((item, i) =>{
           return (
            <li key={i} className='nav__item'>
-             <a className='nav__link' href="#">{item}</a>
+              {item === "Bosh sahifa" ? <NavLink to="/" className='nav__link' > 
+               {item}
+             </NavLink> : <NavLink to={item} className='nav__link' > 
+               {item}
+             </NavLink>}
            </li>
-          )
+          ) 
         })}
       </ul>
 

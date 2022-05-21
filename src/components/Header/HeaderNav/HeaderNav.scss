@@ -1,15 +1,5 @@
 .nav__item:not(:last-child){
   margin-right: 43px;
-
-  &:first-child::before{
-    content: "";
-    width: 100%;
-    height: 1.5px ;
-    background-color: #fff;
-    display: inline-block;
-    position: absolute;
-    bottom: -30px;
-  }
 }
 .nav__item{
   position: relative;
@@ -35,3 +25,12 @@
   bottom: -30px;
 }
 
+.active::before{
+  content: "";
+  width: 100%;
+  height: 1.5px ;
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+  bottom: -30px;
+}

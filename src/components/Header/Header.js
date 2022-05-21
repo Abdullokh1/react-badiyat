@@ -26,3 +26,11 @@ export default function Header() {
     </header>
   )
 }
+
+window.onscroll = function() {
+  if (window.scrollY >= 100 || window.pageYOffset >= 100) {
+    document.getElementsByTagName("header")[0].classList.add('color-change');
+  } else {
+    document.getElementsByTagName("header")[0].classList.remove('color-change');
+  }
+};

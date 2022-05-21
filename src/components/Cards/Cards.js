@@ -1,7 +1,6 @@
 import "./Cards.scss";
 import CategoryBtns from "./CategoryBtns/CategoryBtns";
 import Users from "./Users/Users";
-import {obj} from '../Cards/Users/Data/Data'
 
 
 export default function Cards({setData,data, obj}) {
