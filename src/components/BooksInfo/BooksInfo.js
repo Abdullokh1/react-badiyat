@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react'
 import { useLocation } from 'react-router-dom';
 import { books } from '../BooksData/BooksData'
@@ -55,7 +56,7 @@ export default function BooksInfo() {
 
 
                   <h3 className='mt-5 book__format mb-5'>Mavjud formatlar</h3>
-                  <ul className='d-flex  book__limit__list list-unstyled'>
+                  <ul className='d-flex mb-5  book__limit__list list-unstyled'>
                     <li className='text-center book__price me-5'>
                       <i className='bx category__icon bxs-book-alt' ></i>
                       <p className='mb-2'>Qog'oz kitob</p>
@@ -75,9 +76,8 @@ export default function BooksInfo() {
                     </li>
 
                     <li>
-                      <button className='book__sold__btn'>Javonga qo’shish </button>
+                    <Button variant="contained" className='book__add__btn'>Javonga qo’shish </Button>
                     </li>
-
                   </ul>
                 </div>
               </div>

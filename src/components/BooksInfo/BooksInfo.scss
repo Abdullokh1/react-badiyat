@@ -56,21 +56,11 @@
   font-size: 18px;
 }
 
-.book__limit__list{
-  position: absolute;
+.book__add__btn{
+  background-color: #c9ac8c !important;
+  color: #3C2710 !important;
+  position: relative;
+  right: -200px;
+  border-radius: 0px !important;
 }
 
-.book__sold__btn{
-  position: absolute;
-  right: -350px;
-  padding: 16px 32px;
-  color: #3C2710;
-  background: #c9ac8c;
-
-}
-
-.pre{
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-}
