@@ -1,0 +1,76 @@
+.book__img{
+  width: 520px;
+}
+.book__item::marker{
+  font-size: 0px;
+}
+.book__inner__item{
+  font-family: sans-serif;
+  padding-top: 80px;
+}
+.book__inner__title{
+  white-space: nowrap;
+  font-size: 48px !important; 
+}
+.book__img__wrapper{
+  margin-right: 70px;
+}
+.book__inner__author{
+  color: #c9ac8c !important;
+  font-size: 16px !important;
+}
+.book__desc{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+}
+.accordion-button{
+  background-color: #191919 !important;
+  color: #c9ac8c !important;
+  border-radius: 0px !important;
+  padding-bottom: 20px !important;
+}
+.accordion-button:focus{
+  box-shadow: none !important;
+}
+.book__button{
+  font-size: 16px;
+}
+.accordion-body{
+  background-color: #191919 !important;
+  color: rgba(255, 255, 255, 0.8);
+}
+.accordion-item{
+  border: none !important;
+}
+.accordion{
+  width: 700px;
+}
+
+.book__format{
+  font-family: 'Steinbeck';
+  color: #c9ac8c;
+  font-size: 18px;
+}
+.book__price{
+  font-family: 'Steinbeck';
+  font-size: 18px;
+}
+
+.book__limit__list{
+  position: absolute;
+}
+
+.book__sold__btn{
+  position: absolute;
+  right: -350px;
+  padding: 16px 32px;
+  color: #3C2710;
+  background: #c9ac8c;
+
+}
+
+.pre{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}

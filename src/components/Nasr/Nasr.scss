@@ -1,0 +1,25 @@
+.book-list{
+  font-family: 'Steinbeck';
+  gap: 20px;
+  
+}
+.book__title{
+  font-family: 'Rotterburg Stylish FREE';
+  color: #c9ac8c;
+  font-size: 20px;
+}
+.book__author{
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: sans-serif;
+
+}
+.book__info{
+  font-family: sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.book__item{
+  width: 168px;
+}

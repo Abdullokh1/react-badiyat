@@ -2,6 +2,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Adiblar from './components/Adiblar/Adiblar';
+import BooksInfo from './components/BooksInfo/BooksInfo';
 import Forum from './components/Forum/Forum';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
@@ -28,6 +29,8 @@ function App() {
        <Route path='Forum' element={<Forum/>}/>
        <Route path='SignIn' element={<SignIn/>}/>
        <Route path='Adiblar/:id' element={<Adiblar/>}/>
+       <Route path='BooksInfo/:id' element={<BooksInfo/>}/>
+
        <Route path='*' element={<NoPage/>}/>
     </Routes>
     </>
