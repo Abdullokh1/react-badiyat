@@ -1,47 +1,61 @@
 .book__img{
   width: 520px;
 }
+
 .book__item::marker{
   font-size: 0px;
 }
+
 .book__inner__item{
   font-family: sans-serif;
-  padding-top: 80px;
+  padding-top: 40px;
 }
+
 .book__inner__title{
-  white-space: nowrap;
   font-size: 48px !important; 
+  font-family: 'Rotterburg Stylish FREE';
+  color: #c9ac8c;
+
 }
+
 .book__img__wrapper{
   margin-right: 70px;
 }
+
 .book__inner__author{
   color: #c9ac8c !important;
   font-size: 16px !important;
 }
+
 .book__desc{
   color: rgba(255, 255, 255, 0.6);
   font-size: 20px;
 }
+
 .accordion-button{
   background-color: #191919 !important;
   color: #c9ac8c !important;
   border-radius: 0px !important;
   padding-bottom: 20px !important;
 }
+
 .accordion-button:focus{
   box-shadow: none !important;
 }
+
 .book__button{
   font-size: 16px;
 }
+
 .accordion-body{
   background-color: #191919 !important;
   color: rgba(255, 255, 255, 0.8);
 }
+
 .accordion-item{
   border: none !important;
 }
+
 .accordion{
   width: 700px;
 }
@@ -64,3 +78,10 @@
   border-radius: 0px !important;
 }
 
+.book-data-main-img{
+  border-radius: 15px;
+}
+
+.price-info{
+  color: rgba(255, 255, 255, 0.8);
+}

@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
+import { users } from '../../Data/Data';
 import Cards from '../Cards/Cards'
-import { obj } from '../Cards/Users/Data/Data'
 import Search from '../Hero/Search/Search';
 
+console.log(users);
+
 export default function Main() {
-  let [data, setData] = useState(obj);
+  let [data, setData] = useState(users);
 
   return (
     <>
       <Search setData={setData}/>
      <Cards
       setData={setData}
-      obj={obj}
+      obj={users}
       data={data}
      />
     </>

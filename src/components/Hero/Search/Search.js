@@ -1,11 +1,11 @@
 import React from 'react'
+import { users } from '../../../Data/Data'
 import './Search.scss'
-import { obj } from '../../Cards/Users/Data/Data'
 
 export default function Search({setData}) {
   let arr = []
   const searchHanlder = (e) =>{
-    {obj.map(item =>{
+    {users.map(item =>{
       if(item.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())){
         arr.push(item)
        }

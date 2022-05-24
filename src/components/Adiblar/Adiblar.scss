@@ -42,3 +42,44 @@
   font-family: 'Steinbeck';
 
 }
+
+.user-location{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+
+.user-job{
+  color: #c9ac8c;
+  font-size: 20px;
+}
+
+.user-job-desc{
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Steinbeck';
+}
+
+.user-more-btn{
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.user-book-list{
+  gap: 25px;
+}
+
+.book-name{
+  color: #c9ac8c;
+  font-size: 20px;
+}
+
+.book-ratings{
+  color: rgba(255, 255, 255, 0.8);
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.user-book-img{
+  object-fit: cover;
+  border-radius: 15px;
+}

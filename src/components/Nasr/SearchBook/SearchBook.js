@@ -1,17 +1,20 @@
 import React from 'react'
-import { books } from '../../BooksData/BooksData'
+import { users } from '../../../Data/Data'
 
 export default function SearchBook({setData}) {
 
   let arr = []
   const searchHanlder = (e) =>{
-    {books.map(item =>{
-      if(item.bookTitle.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())){
-        arr.push(item)
-       }
+    {users.map(item =>{
+      return item.bookObj.map(book =>{
+        if(book.bookName.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())){
+          arr.push(item)
+         }
+      })
     })}
     setData(arr)
   }
+  
   return (
     <div className='hero__search'>
       <h3 className='hero__search--title'>Qidirish</h3>

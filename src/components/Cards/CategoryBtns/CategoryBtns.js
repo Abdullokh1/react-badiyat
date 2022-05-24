@@ -6,24 +6,22 @@ export default function CategoryBtns({setData, obj, data}) {
   const filterHandler = (e) =>{
     let btnValue = e.target.textContent
    
-    if(btnValue === 'Temuriylar davri'){
+    if(btnValue === 'All'){
+      setData(obj)
+    }
+    else if(btnValue === "O'zbek"){
       setData(obj.filter(item =>{
-        return item.type === 'Temuriylar davri';
+        return item.genre === 'uzbek';
       }))
     }
-    else if(btnValue === 'Jadid adabiyoti'){
+    else if(btnValue === 'Jahon'){
       setData(obj.filter(item =>{
-        return item.type === 'Jadid adabiyoti';
+        return item.genre === 'jahon';
       }))
     }
-    else if(btnValue === 'Sovet davri'){
+    else if(btnValue === 'Diniy'){
       setData(obj.filter(item =>{
-        return item.type === 'Sovet davri';
-      }))
-    }
-    else if(btnValue === 'Mustaqillik davri'){
-      setData(obj.filter(item =>{
-        return item.type === 'Mustaqillik davri';
+        return item.genre === 'Diniy';
       }))
     }
   }

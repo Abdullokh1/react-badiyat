@@ -30,7 +30,6 @@ function App() {
        <Route path='SignIn' element={<SignIn/>}/>
        <Route path='Adiblar/:id' element={<Adiblar/>}/>
        <Route path='BooksInfo/:id' element={<BooksInfo/>}/>
-
        <Route path='*' element={<NoPage/>}/>
     </Routes>
     </>

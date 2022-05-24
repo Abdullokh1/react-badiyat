@@ -5,7 +5,8 @@ import Users from "./Users/Users";
 
 export default function Cards({setData,data, obj}) {
 
-  const filterBtns = ['Temuriylar davri', 'Jadid adabiyoti', 'Sovet davri', 'Mustaqillik davri']
+
+  const filterBtns = ['All', `O'zbek`, 'Jahon', 'Diniy']
 
   return (
     <div>

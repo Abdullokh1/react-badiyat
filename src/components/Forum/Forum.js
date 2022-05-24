@@ -8,6 +8,11 @@ import { Button, TextField } from '@mui/material'
 
 
 export default function Forum() {
+
+  
+
+ 
+
   return (
     <div className='form-part'>
       <div className='d-flex '>
@@ -31,7 +36,7 @@ export default function Forum() {
           
           <form className='d-flex form-group  flex-column'>
             <TextField
-              className='form-inputs'
+              className='form-inputs form-inputs-names'
               id="demo-helper-text-aligned"
               label="First name"
             />
