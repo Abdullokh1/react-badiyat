@@ -12,7 +12,7 @@ export default function HeaderNav() {
            <li key={i} className='nav__item'>
               {item === "Bosh sahifa" ? <NavLink to="/" className='nav__link' > 
                {item}
-             </NavLink> : <NavLink to={item} className='nav__link' > 
+             </NavLink> : <NavLink to={`/${item}`} className='nav__link' > 
                {item}
              </NavLink>}
            </li>

@@ -2,6 +2,7 @@ import { Button } from '@mui/material';
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import { users } from '../../Data/Data';
+import Header from '../Header/Header';
 import './BooksInfo.scss'
 
 
@@ -9,6 +10,8 @@ export default function BooksInfo() {
   let location = useLocation()
   return (
     <>
+    <Header/>
+
     <div className='container'>
       {users.map(item =>{
        return item.bookObj.map(book =>{
@@ -80,7 +83,7 @@ export default function BooksInfo() {
                       </li>
     
                       <li>
-                      <Button variant="contained" className='book__add__btn'>Javonga qo’shish </Button>
+                        <Button variant="contained" className='book__add__btn'>Javonga qo’shish </Button>
                       </li>
                     </ul>
                   </div>
@@ -88,7 +91,6 @@ export default function BooksInfo() {
               </li>
             )
           }
-         
       })
       })}
     </div>

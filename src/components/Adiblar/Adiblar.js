@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { users } from '../../Data/Data'
+import Header from '../Header/Header'
 import './Adiblar.scss'
 
 export default function Adiblar() {
@@ -8,6 +9,9 @@ export default function Adiblar() {
 
 
   return (
+    <>
+    <Header/>
+    
     <div className='container'>
       {users.map((item) =>{
         if(item.id === location.pathname.split("/").at(-1)){
@@ -65,5 +69,7 @@ export default function Adiblar() {
         }
       })}
     </div>
+    
+    </>
   )
 }

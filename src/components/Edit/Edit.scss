@@ -1,0 +1,54 @@
+.edit{
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 80px;
+  font-family: sans-serif;
+}
+.user-hero__second{
+  background-color: #f3f6f9 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.edit__profile{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.edit-img-wrapper{
+  margin-right: 130px;
+}
+
+.edit__label{
+  font-size: 14px;
+}
+
+.edit__inpInfo{
+  color: #b5b5c3;
+  font-size: 13px;
+}
+
+.edit__input{
+  background: #f3f6F9;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
+  height: 44px;
+  padding-left: 30px;
+}
+.edit__input:focus{
+  outline: none;
+}
+
+.edit__info__wrapper{
+  border-bottom: 1px solid #ECF0F3;
+  padding-bottom: 30px;
+}
+
+.edit__btn{
+  background-color: #152540 !important;
+  font-size: 13px !important;
+  padding: 12px 25px !important;
+}

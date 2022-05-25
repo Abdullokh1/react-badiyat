@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Forum.scss'
 import formImg from '../../assets/img/form1-img.png'
 import { Link } from 'react-router-dom'
@@ -7,9 +7,70 @@ import { Button, TextField } from '@mui/material'
 
 
 
-export default function Forum() {
+export default function Forum({ 
+  setName,
+  setLastName,
+  setPhone,
+  setEmail,
+  setJob}) {
+ 
 
-  
+   let [isValid, setValid] = useState(true)
+
+
+    const addNameHandler = (e) =>{
+      if(e.target.value.match(/[0-9]/)){
+        setValid(isValid = false)
+      }
+      else{
+        setValid(isValid = true)
+      }
+      setName(e.target.value)
+    }
+
+    const addLastNameHandler = (e) =>{
+      if(e.target.value.match(/[0-9]/)){
+        setValid(isValid = false)
+      }
+      else{
+        setValid(isValid = true)
+
+      }
+      setLastName(e.target.value)
+    }
+
+    const addNumberHanlder = (e) =>{
+      if(e.target.value.length < 10){
+        setValid(isValid = false)
+      }
+      else{
+        setValid(isValid = true)
+
+      }
+      setPhone(e.target.value)
+    }
+
+    const addEmailHandler = (e) =>{
+      if(!e.target.value.match(/[@]/)){
+        setValid(isValid = false)
+      }
+      else{
+        setValid(isValid = true)
+
+      }
+      setEmail(e.target.value)
+    }
+    
+    const addJobHandler = (e) =>{
+      if(e.target.value.match(/[!@#$%^&*()_+]/)){
+        setValid(isValid = false)
+      }
+      else{
+        setValid(isValid = true)
+
+      }
+      setJob(e.target.value)
+    }
 
  
 
@@ -34,41 +95,52 @@ export default function Forum() {
 
           </div>
           
-          <form className='d-flex form-group  flex-column'>
+          <form  className='d-flex form-group  flex-column'>
             <TextField
-              className='form-inputs form-inputs-names'
+              onChange={addNameHandler}
+              className={`form-inputs ${isValid === true ? 'correct' : 'error'} form-inputs-names`}
               id="demo-helper-text-aligned"
               label="First name"
+              required
             />
 
             <TextField
-              className='form-inputs '
+              onChange={addLastNameHandler}
+              className={`form-inputs ${isValid === true ? 'correct' : 'error'}`}
               id="demo-helper-text-aligned-no-helper"
               label="Last name"
+              required
             />
          
             <TextField
-              className='form-inputs'
+              onChange={addNumberHanlder}
+              className={`form-inputs ${isValid === true ? 'correct' : 'error'}`}
               id="demo-helper-text-misaligned"
               label="Phone"
               type='number'
+              required
             />
 
             <TextField
-              className='form-inputs'
+              onChange={addEmailHandler}
+              className={`form-inputs ${isValid === true ? 'correct' : 'error'}`}
               id="demo-helper-text-misaligned"
               label="Email"
               type='email'
+              required
             />
 
             <TextField
-              className='form-inputs mb-4'
+              onChange={addJobHandler}
+              className={`form-inputs ${isValid === true ? 'correct' : 'error'}`}
               id="demo-helper-text-misaligned"
-              label="Password"
-              type='password'
+              label="Job"
+              type='text'
+              required
             />
-
-           <Button className='form-btn' variant="contained">Next step</Button>
+           <Link to={`${isValid === true ? '/' : '/Forum'}`}>
+             <Button type='submit' className='form-btn' variant="contained">Next step</Button>
+           </Link>
 
           </form>
         </div>

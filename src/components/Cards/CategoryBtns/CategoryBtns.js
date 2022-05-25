@@ -1,26 +1,26 @@
 import React from 'react'
 import './CategoryBtns.scss'
 
-export default function CategoryBtns({setData, obj, data}) {
+export default function CategoryBtns({setData, users, item}) {
 
   const filterHandler = (e) =>{
     let btnValue = e.target.textContent
    
     if(btnValue === 'All'){
-      setData(obj)
+      setData(users)
     }
     else if(btnValue === "O'zbek"){
-      setData(obj.filter(item =>{
+      setData(users.filter(item =>{
         return item.genre === 'uzbek';
       }))
     }
     else if(btnValue === 'Jahon'){
-      setData(obj.filter(item =>{
+      setData(users.filter(item =>{
         return item.genre === 'jahon';
       }))
     }
     else if(btnValue === 'Diniy'){
-      setData(obj.filter(item =>{
+      setData(users.filter(item =>{
         return item.genre === 'Diniy';
       }))
     }
@@ -29,7 +29,7 @@ export default function CategoryBtns({setData, obj, data}) {
   return (
     <>
       <li className='category__item'>
-        <button onClick={filterHandler} className='category__filter__btn'>{data}</button>
+        <button onClick={filterHandler} className='category__filter__btn'>{item}</button>
       </li>
     </>
   )

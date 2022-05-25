@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export default function BookFilterBtns({setData, obj, data}) {
+export default function BookFilterBtns({setData, users, data}) {
 
 
 
@@ -9,22 +9,22 @@ export default function BookFilterBtns({setData, obj, data}) {
     let btnValue = e.target.textContent
    
     if(btnValue === 'All'){
-      setData(obj.map(item =>{
+      setData(users.map(item =>{
         return item
       }))
     }
      if(btnValue === "O'zbek"){
-      setData(obj.filter(item =>{
+      setData(users.filter(item =>{
         return item.genre === 'uzbek';
       }))
     }
     else if(btnValue === 'Jahon'){
-      setData(obj.filter(item =>{
+      setData(users.filter(item =>{
         return item.genre === 'jahon';
       }))
     }
     else if(btnValue === 'Diniy'){
-      setData(obj.filter(item =>{
+      setData(users.filter(item =>{
         return item.genre === 'Diniy';
       }))
     }
