@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
@@ -7,7 +6,6 @@ import BooksInfo from './components/BooksInfo/BooksInfo';
 import Edit from './components/Edit/Edit';
 import Forum from './components/Forum/Forum';
 import UserDashboard from './components/Forum/UserDashboard/UserDashboard';
-import UserHero from './components/Forum/UserDashboard/UserHero/UserHero';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Maqolalar from './components/Maqolalar/Maqolalar';
@@ -15,17 +13,16 @@ import Nasr from './components/Nasr/Nasr';
 import Nazm from './components/Nazm/Nazm';
 import NoPage from './components/NoPage/NoPage';
 import SignIn from './components/SignIn/SignIn';
-
+import Wishlist from './components/Wishlist/Wishlist'
+import { users } from './Data/Data';
 
 
 function App() {
-
+  
   let [name, setName] = useState('')
   let [lastName, setLastName] = useState('')
   let [phone, setPhone] = useState('')
   let [email, setEmail] = useState('')
-  let [job, setJob] = useState('')
-
 
   
   return (
@@ -45,8 +42,6 @@ function App() {
        setPhone={setPhone}
        email={email}
        setEmail={setEmail}
-       job={job}
-       setJob={setJob}
        />}/>
        <Route path='SignIn' element={<SignIn/>}/>
        <Route path='UserDashboard' element={<UserDashboard
@@ -54,10 +49,10 @@ function App() {
        lastName={lastName}
        phone={phone}
        email={email}
-       job={job}
        />}/>
        <Route path='Adiblar/:id' element={<Adiblar/>}/>
        <Route path='BooksInfo/:id' element={<BooksInfo/>}/>
+       <Route path='Wishlist' element={<Wishlist/>}/>
        <Route path='Edit' element={<Edit
         name={name}
         setName={setName}
@@ -67,9 +62,6 @@ function App() {
         setPhone={setPhone}
         email={email}
         setEmail={setEmail}
-        job={job}
-        setJob={setJob}
-       
        />}/>
 
        <Route path='*' element={<NoPage/>}/>

@@ -5,9 +5,26 @@ import { users } from '../../Data/Data';
 import Header from '../Header/Header';
 import './BooksInfo.scss'
 
+let saveBooks = []
+
+export {saveBooks}
 
 export default function BooksInfo() {
   let location = useLocation()
+
+  const addHandler = (e) =>{
+    let btnId = e.target.id
+    {users.forEach(item =>{
+      item.bookObj.map(el =>{
+        if(btnId === el.bookId){
+          saveBooks.push(el)
+        }
+      })
+    })}
+
+
+  }
+
   return (
     <>
     <Header/>
@@ -83,7 +100,7 @@ export default function BooksInfo() {
                       </li>
     
                       <li>
-                        <Button variant="contained" className='book__add__btn'>Javonga qo’shish </Button>
+                        <Button id={book.bookId} onClick={addHandler} variant="contained" className='book__add__btn'>Javonga qo’shish </Button>
                       </li>
                     </ul>
                   </div>

@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import "./Header.scss";
 import mainLogo from "../../assets/img/main-logo.svg";
 import HeaderNav from "./HeaderNav/HeaderNav";
-import userAvatar from "../../assets/img/user-avatar.svg";
 import { Link } from "react-router-dom";
+import Wishlist from "../Wishlist/Wishlist";
 
 export default function Header() {
+
   let [isClicked, setClick] = useState(false);
 
   return (
@@ -58,16 +59,20 @@ export default function Header() {
                       <p onClick={() => setClick(!isClicked)}
                          className="m-0 header__modal__link d-flex align-items-center">
                          <i className="bx header__user__icon me-2 bxs-cog"></i>
-                         Settings
+                         Edit
                       </p>
                     </Link>
                   </li>
+
                   <li className="header__modal__item">
-                    <p className=" header__modal__link d-flex align-items-center">
+                  
+                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"className=" header__modal__link d-flex align-items-center">
                       <i className="bx header__user__icon me-2 bxs-bookmark-star"></i>
-                      Wishlist
-                    </p>
+                      Saved books
+                    </button>
                   </li>
+                  <Wishlist/>
+
                 </ul>
               </div>
             </div>
@@ -77,4 +82,3 @@ export default function Header() {
     </header>
   );
 }
-

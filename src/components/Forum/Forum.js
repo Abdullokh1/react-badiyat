@@ -130,14 +130,7 @@ export default function Forum({
               required
             />
 
-            <TextField
-              onChange={addJobHandler}
-              className={`form-inputs ${isValid === true ? 'correct' : 'error'}`}
-              id="demo-helper-text-misaligned"
-              label="Job"
-              type='text'
-              required
-            />
+           
            <Link to={`${isValid === true ? '/' : '/Forum'}`}>
              <Button type='submit' className='form-btn' variant="contained">Next step</Button>
            </Link>

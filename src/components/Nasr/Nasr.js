@@ -8,7 +8,6 @@ import './Nasr.scss'
 import SearchBook from './SearchBook/SearchBook'
 
 export default function Nasr() {
-  // let [data, setData] = useState(users)
 
   let [arr, setArr] = useState([]);
   let [currentPage, setCurrentPage] = useState(1);
